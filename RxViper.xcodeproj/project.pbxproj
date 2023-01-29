@@ -16,6 +16,11 @@
 		0C9F3D532986750200BCDE37 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0C9F3D522986750200BCDE37 /* SnapKit */; };
 		0C9F3D572986774E00BCDE37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C9F3D562986774E00BCDE37 /* Main.storyboard */; };
 		0C9F3D592986802B00BCDE37 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9F3D582986802B00BCDE37 /* DetailViewController.swift */; };
+		0CC0CF1B29868BF0002111A0 /* RMHomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC0CF1629868BF0002111A0 /* RMHomeModule.swift */; };
+		0CC0CF1C29868BF0002111A0 /* RMHomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC0CF1729868BF0002111A0 /* RMHomePresenter.swift */; };
+		0CC0CF1D29868BF0002111A0 /* RMHomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC0CF1829868BF0002111A0 /* RMHomeRouter.swift */; };
+		0CC0CF1E29868BF0002111A0 /* RMHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC0CF1929868BF0002111A0 /* RMHomeViewController.swift */; };
+		0CC0CF1F29868BF0002111A0 /* RMHomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC0CF1A29868BF0002111A0 /* RMHomeInteractor.swift */; };
 		5AFAD7CEA8317F203AA353D7 /* Pods_RxViper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD406A8D2A24CBB1D241390E /* Pods_RxViper.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,11 @@
 		0C9F3D4F2986728D00BCDE37 /* RMCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacter.swift; sourceTree = "<group>"; };
 		0C9F3D562986774E00BCDE37 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0C9F3D582986802B00BCDE37 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0CC0CF1629868BF0002111A0 /* RMHomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMHomeModule.swift; sourceTree = "<group>"; };
+		0CC0CF1729868BF0002111A0 /* RMHomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMHomePresenter.swift; sourceTree = "<group>"; };
+		0CC0CF1829868BF0002111A0 /* RMHomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMHomeRouter.swift; sourceTree = "<group>"; };
+		0CC0CF1929868BF0002111A0 /* RMHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMHomeViewController.swift; sourceTree = "<group>"; };
+		0CC0CF1A29868BF0002111A0 /* RMHomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMHomeInteractor.swift; sourceTree = "<group>"; };
 		2DCDB2A2CB89CE79D358E56C /* Pods-RxViper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxViper.release.xcconfig"; path = "Target Support Files/Pods-RxViper/Pods-RxViper.release.xcconfig"; sourceTree = "<group>"; };
 		469675AD471D2A154662F525 /* Pods-RxViper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxViper.debug.xcconfig"; path = "Target Support Files/Pods-RxViper/Pods-RxViper.debug.xcconfig"; sourceTree = "<group>"; };
 		BD406A8D2A24CBB1D241390E /* Pods_RxViper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxViper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,8 +81,9 @@
 			children = (
 				0C47B09F29864FDE0085E18B /* AppDelegate.swift */,
 				0C47B0A129864FDE0085E18B /* SceneDelegate.swift */,
-				0C47B0A329864FDE0085E18B /* HomeViewController.swift */,
 				0C9F3D582986802B00BCDE37 /* DetailViewController.swift */,
+				0C47B0A329864FDE0085E18B /* HomeViewController.swift */,
+				0CC0CF1529868B95002111A0 /* Home */,
 				0C9F3D4F2986728D00BCDE37 /* RMCharacter.swift */,
 				0C47B0A829864FDF0085E18B /* Assets.xcassets */,
 				0C9F3D562986774E00BCDE37 /* Main.storyboard */,
@@ -80,6 +91,18 @@
 				0C47B0AD29864FDF0085E18B /* Info.plist */,
 			);
 			path = RxViper;
+			sourceTree = "<group>";
+		};
+		0CC0CF1529868B95002111A0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0CC0CF1629868BF0002111A0 /* RMHomeModule.swift */,
+				0CC0CF1729868BF0002111A0 /* RMHomePresenter.swift */,
+				0CC0CF1829868BF0002111A0 /* RMHomeRouter.swift */,
+				0CC0CF1929868BF0002111A0 /* RMHomeViewController.swift */,
+				0CC0CF1A29868BF0002111A0 /* RMHomeInteractor.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		4198A61DDFFD5D24A3E183AF /* Pods */ = {
@@ -220,10 +243,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC0CF1F29868BF0002111A0 /* RMHomeInteractor.swift in Sources */,
+				0CC0CF1C29868BF0002111A0 /* RMHomePresenter.swift in Sources */,
 				0C47B0A429864FDE0085E18B /* HomeViewController.swift in Sources */,
 				0C9F3D502986728D00BCDE37 /* RMCharacter.swift in Sources */,
 				0C9F3D592986802B00BCDE37 /* DetailViewController.swift in Sources */,
+				0CC0CF1B29868BF0002111A0 /* RMHomeModule.swift in Sources */,
 				0C47B0A029864FDE0085E18B /* AppDelegate.swift in Sources */,
+				0CC0CF1D29868BF0002111A0 /* RMHomeRouter.swift in Sources */,
+				0CC0CF1E29868BF0002111A0 /* RMHomeViewController.swift in Sources */,
 				0C47B0A229864FDE0085E18B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
